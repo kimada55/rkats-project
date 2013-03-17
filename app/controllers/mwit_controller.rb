@@ -1,0 +1,2 @@
+class MwitController < ApplicationController
+end
