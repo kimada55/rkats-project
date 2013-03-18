@@ -5,8 +5,15 @@ gem 'rails', '3.2.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
-gem 'haml'
+# for Heroku deployment - as described in Ap. A of ELLS book
+group :development, :test do
+  gem 'sqlite3'
+  #gem 'ruby-debug19', :require => 'ruby-debug' # MOD KIMADA 2/21/2013 Commented out
+end
+group :production do
+  gem 'therubyracer-heroku', :platform => :ruby # MOD KIMADA 2/21/2013 Added
+  gem 'pg'
+end
 
 
 # Gems used only for assets and not required
