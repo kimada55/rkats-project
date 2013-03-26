@@ -1,6 +1,13 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.2.1'
+group :test do
+	gem 'cucumber-rails'
+	gem 'cucumber-rails-training-wheels'
+	gem 'database_cleaner'
+	gem 'capybara'
+	gem 'launchy'
+end
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
