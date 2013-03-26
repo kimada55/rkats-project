@@ -1,4 +1,14 @@
 Mwit::Application.routes.draw do
+  resources :posts
+
+  resources :group_permissions
+
+  resources :group_vals
+
+  resources :user_groups
+
+  resources :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  group_type: MyString
+  action: MyString
+  action_ind: MyString
+
+two:
+  group_type: MyString
+  action: MyString
+  action_ind: MyString

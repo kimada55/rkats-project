@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @post.title %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @post.type %>
+</p>
+
+<p>
+  <b>Detail:</b>
+  <%= @post.detail %>
+</p>
+
+<p>
+  <b>Post date:</b>
+  <%= @post.post_date %>
+</p>
+
+<p>
+  <b>Cal date:</b>
+  <%= @post.cal_date %>
+</p>
+
+<p>
+  <b>Exp date:</b>
+  <%= @post.exp_date %>
+</p>
+
+<p>
+  <b>User post:</b>
+  <%= @post.user_post_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @post.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>

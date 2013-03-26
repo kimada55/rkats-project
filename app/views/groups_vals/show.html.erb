@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Type:</b>
+  <%= @groups_val.type %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @groups_val.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_groups_val_path(@groups_val) %> |
+<%= link_to 'Back', groups_vals_path %>

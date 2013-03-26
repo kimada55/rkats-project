@@ -1,0 +1,27 @@
+<h1>Listing group_permissions</h1>
+
+<table>
+  <tr>
+    <th>Group type</th>
+    <th>Action</th>
+    <th>Action ind</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @group_permissions.each do |group_permission| %>
+  <tr>
+    <td><%= group_permission.group_type %></td>
+    <td><%= group_permission.action %></td>
+    <td><%= group_permission.action_ind %></td>
+    <td><%= link_to 'Show', group_permission %></td>
+    <td><%= link_to 'Edit', edit_group_permission_path(group_permission) %></td>
+    <td><%= link_to 'Destroy', group_permission, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Group permission', new_group_permission_path %>

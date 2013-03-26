@@ -1,0 +1,25 @@
+<h1>Listing groups_vals</h1>
+
+<table>
+  <tr>
+    <th>Type</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @groups_vals.each do |groups_val| %>
+  <tr>
+    <td><%= groups_val.type %></td>
+    <td><%= groups_val.description %></td>
+    <td><%= link_to 'Show', groups_val %></td>
+    <td><%= link_to 'Edit', edit_groups_val_path(groups_val) %></td>
+    <td><%= link_to 'Destroy', groups_val, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Groups val', new_groups_val_path %>

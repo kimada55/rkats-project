@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  first_name: 
+  last_name: 
+  email: 
+  password: 
+  pass_exp_date: 
+  add_date: 
+  activity_date: 
+
+two:
+  first_name: 
+  last_name: 
+  email: 
+  password: 
+  pass_exp_date: 
+  add_date: 
+  activity_date: 
