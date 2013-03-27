@@ -1,13 +1,4 @@
 Mwit::Application.routes.draw do
-  resources :posts
-
-  resources :group_permissions
-
-  resources :group_vals
-
-  resources :user_groups
-
-  resources :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -24,6 +15,19 @@ Mwit::Application.routes.draw do
   #   resources :products
   resources :mwit
   root :to => redirect('/mwit')
+
+  # MOD KIMADA 3/26/2013 Welcome Page
+  resources :welcome
+
+  resources :group_permissions
+
+  resources :group_vals
+
+  resources :user_groups
+
+  resources :users
+
+  resources :posts
 
   # Sample resource route with options:
   #   resources :products do

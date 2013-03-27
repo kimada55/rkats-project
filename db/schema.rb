@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(:version => 20130319035108) do
 
   create_table "posts", :force => true do |t|
     t.string   "title",         :null => false
-    t.string   "type",          :null => false
+    t.string   "post_type",     :null => false
     t.string   "detail",        :null => false
     t.date     "post_date",     :null => false
     t.string   "restricted"

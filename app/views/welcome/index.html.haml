@@ -1,0 +1,14 @@
+-#  This file is app/views/welcome/index.html.haml
+-#  KIMADA 3/26/2013 Welcome Page
+%table{:class => "top"}
+	%tbody
+		%tr
+			%td= image_tag "mwit_logo.jpg", :class => "logo"
+			%td{:class => "mwit"} Mills Women in Technology
+			%td
+			%td= link_to "Placeholder", posts_path, :class => "top"
+%h3 Welcome!
+%table
+	%tbody
+		%tr
+			%td= link_to "View All Postings", posts_path, :class => "body"

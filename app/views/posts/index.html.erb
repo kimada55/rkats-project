@@ -1,9 +1,9 @@
-<h1>Listing posts</h1>
+<h1>Postings</h1>
 
 <table>
   <tr>
     <th>Title</th>
-    <th>Type</th>
+    <th>Post Type</th>
     <th>Detail</th>
     <th>Post date</th>
     <th>Cal date</th>
@@ -18,10 +18,10 @@
 <% @posts.each do |post| %>
   <tr>
     <td><%= post.title %></td>
-    <td><%= post.type %></td>
+    <td><%= post.post_type %></td>
     <td><%= post.detail %></td>
     <td><%= post.post_date %></td>
-    <td><%= post.cal_date %></td>
+    <td><%= post.event_date %></td>
     <td><%= post.exp_date %></td>
     <td><%= post.user_post_id %></td>
     <td><%= post.user_id %></td>

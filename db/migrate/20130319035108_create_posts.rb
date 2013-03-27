@@ -2,7 +2,7 @@ class CreatePosts < ActiveRecord::Migration
   def up
     create_table :posts do |t|
       t.string :title, :null => false
-      t.string :type, :null => false
+      t.string :post_type, :null => false
       t.string :detail, :null => false
       t.date :post_date, :null => false
       t.string :restricted
