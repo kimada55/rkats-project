@@ -2,7 +2,11 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    #@posts = Post.all
+    # MOD KIMADA 3/31/2013
+    ct = Time.now.to_s
+    @posts = Post.where(['exp_date > ?',Time.zone.now.beginning_of_day])
+    #
 
     respond_to do |format|
       format.html # index.html.erb

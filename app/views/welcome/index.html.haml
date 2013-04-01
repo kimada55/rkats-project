@@ -4,11 +4,23 @@
 	%tbody
 		%tr
 			%td= image_tag "mwit_logo.jpg", :class => "logo"
+			%td= link_to "New Post", posts_path, :class => "top"
 			%td{:class => "mwit"} Mills Women in Technology
 			%td
-			%td= link_to "Placeholder", posts_path, :class => "top"
+			%td= link_to "Home", mwit_index_path, :class => "top"
+			%td Logout
 %h3 Welcome!
 %table
 	%tbody
 		%tr
-			%td= link_to "View All Postings", posts_path, :class => "body"
+			%td= link_to "View All Active Postings", posts_path, :class => "body"
+		%tr
+			%td= link_to "View Expired Postings", :class => "body"
+		%tr
+			%td Events
+		%tr
+			%td Internships
+		%tr	
+			%td Jobs
+		%tr	
+			%td Scholarships

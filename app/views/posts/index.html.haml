@@ -1,0 +1,35 @@
+-#  KIMADA 3/31/2013 Added Top Area to Postings Page and Convert to HAML
+%table{:class => "top"}
+    %tbody
+        %tr
+            %td= image_tag "mwit_logo.jpg", :class => "logo"
+            %td= link_to "New Post", posts_path, :class => "top"
+            %td{:class => "mwit"} Mills Women in Technology
+            %td
+            %td= link_to "Home", mwit_index_path, :class => "top"
+            %td Logout
+
+%h1 Postings
+
+%table
+    %thead
+        %th Title
+        %th Post Type
+        %th Detail
+        %th Post Date
+        %th Event Date
+        %th Expiration Date
+    %tbody
+        - @posts.each do |post|
+            %tr
+                %td= post.title
+                %td= post.post_type
+                %td= post.detail
+                %td= post.post_date
+                %td= post.event_date
+                %td= post.exp_date
+                %td= link_to 'Show', post
+                %td= link_to 'Edit', edit_post_path(post)
+                %td= link_to 'Destroy', post, confirm: 'Are you sure?', method: :delete
+
+= link_to 'New Post', new_post_path

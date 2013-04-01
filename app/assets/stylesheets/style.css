@@ -22,6 +22,9 @@ img.logo {
 
 img.main_img {
 	border: 0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	height: 25%;
 	width: 25%;
 }
