@@ -5,7 +5,7 @@ class PostsController < ApplicationController
     #@posts = Post.all
     # MOD KIMADA 3/31/2013
     ct = Time.now.to_s
-    @posts = Post.where(['exp_date > ?',Time.zone.now.beginning_of_day])
+    @posts = Post.where(['exp_date >= ?',Time.zone.now.beginning_of_day] )
     #
 
     respond_to do |format|
@@ -78,9 +78,9 @@ class PostsController < ApplicationController
   def destroy
     @post = Post.find(params[:id])
     @post.destroy
-
+    
     respond_to do |format|
-      format.html { redirect_to posts_url }
+      format.html { redirect_to posts_url, notice: 'Post was deleted.' }
       format.json { head :no_content }
     end
   end
