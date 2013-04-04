@@ -29,10 +29,11 @@ class PostsController < ApplicationController
   # GET /posts/new.json
   def new
     @post = Post.new
+    inspect params
 
     respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @post }
+     format.html  # new.html.erb
+     format.json { render json: @post }
     end
   end
 
@@ -45,6 +46,7 @@ class PostsController < ApplicationController
   # POST /posts.json
   def create
     @post = Post.new(params[:post])
+    # aross 4/02/2013 adding in hidden parameters (do i do it here on on screen?)
 
     respond_to do |format|
       if @post.save

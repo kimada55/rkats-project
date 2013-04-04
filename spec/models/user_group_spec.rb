@@ -1,0 +1,1 @@
+#Rspec placeholder to test user_group.rb

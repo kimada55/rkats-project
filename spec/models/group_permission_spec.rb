@@ -1,0 +1,1 @@
+#Rspec placeholder to test model group_permission.rb

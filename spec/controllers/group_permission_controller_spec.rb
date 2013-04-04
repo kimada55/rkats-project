@@ -1,0 +1,1 @@
+#RSpecs file for group_permissions_controller.#!/usr/bin/env ruby -wKU
