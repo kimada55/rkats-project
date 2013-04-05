@@ -4,11 +4,11 @@
 	%tbody
 		%tr
 			%td= image_tag "mwit_logo.jpg", :class => "logo"
-			%td= link_to "New Post", posts_path, :class => "top"
+			%td= link_to "New Post", new_post_path, :class => "top"
 			%td{:class => "mwit"} Mills Women in Technology
 			%td
 			%td= link_to "Home", mwit_index_path, :class => "top"
-			%td Logout
+			%td{:class => "top"} Logout
 %h3 Welcome!
 %table
 	%tbody

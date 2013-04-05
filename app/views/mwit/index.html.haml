@@ -9,7 +9,7 @@
 				%table
 					%tbody
 						%tr
-							%td= link_to 'Login', group_vals_path
+							%td= link_to 'Login'
 							%td Sign-Up
 = image_tag "woman_computer.jpg", :class => "main_img"
 -#%img(src="/images/mwit_logo.jpg" width="104" height="175")
@@ -17,7 +17,7 @@
 %br
 %table
 	%tr
-		%td{:class => "main_bottom"} Explore
+		%td{:class => "main_bottom"}=link_to "Explore", welcome_index_path, :class => "top"
 		%td{:class => "main_bottom"} Engage
 		%td{:class => "main_bottom"}=link_to "Post", posts_path, :class => "top"
 	%tr
