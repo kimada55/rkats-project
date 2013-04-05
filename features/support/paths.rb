@@ -16,11 +16,14 @@ module NavigationHelpers
     #when /^the home\s?page$/
     #  '/'
     # MOD KIMADA 3/26/2013
-    when /^the MWIT Posts page/
+    when /^the MWIT Posts page$/
       '/posts/'
 
-    when /^the MWIT welcome page/
+    when /^the MWIT welcome page$/
       '/welcome/'
+
+    when /^the New Posts page$/
+      '/posts/new'
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:

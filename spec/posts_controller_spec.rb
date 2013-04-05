@@ -45,7 +45,7 @@ describe PostsController, :type => :controller do
 
 	describe "#index", :js => true, :focus => true do
 		it "shows only active posts" do
-			Post.where(['exp_date >= ?',Time.zone.now.beginning_of_day]).count.should eql 1
+			Post.where(['exp_date >= ?', Date.today]).count.should eql 1
 		end
 
 		it "renders the index template" do

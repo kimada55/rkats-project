@@ -17,3 +17,12 @@ When /^I follow "([^"]*)" for "([^"]*)"$/ do |link, x|
     click_link(link)
   end
 end
+
+When /^(?:|I )fill in "([^"]*)" with "([^"]*)"$/ do |field, value|
+  fill_in(field, :with => value)
+end
+
+# https://gist.github.com/jeffrafter/51141
+When /^I select "(.*)" as the "(.*)" date$/ do |date, date_label|
+  select_date(date, :from => date_label)
+end
