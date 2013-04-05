@@ -39,11 +39,17 @@ table.top {
 	color: #FFFFFF;
 }
 
+th {
+	color: #000F2E;
+}
+
 tr {
 	text-align: left;
+	color: #000F2E;
 }
 
 td {
+	color: #000F2E;
 	text-align: left;
 	vertical-align: text-bottom;
 	font-size: 90%;

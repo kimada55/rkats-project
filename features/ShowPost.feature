@@ -1,4 +1,4 @@
-# SelectPost.feature
+# ShowPost.feature
 # KIMADA 3/26/2013
 
 Feature: Select a Specific Post

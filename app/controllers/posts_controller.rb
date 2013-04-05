@@ -4,8 +4,8 @@ class PostsController < ApplicationController
   def index
     #@posts = Post.all
     # MOD KIMADA 3/31/2013
-    ct = Time.now.to_s
-    @posts = Post.where(['exp_date >= ?',Time.zone.now.beginning_of_day] )
+    #@posts = Post.all    
+    @posts = Post.where(['DATE(exp_date) >= ?', Date.today])
     #
 
     respond_to do |format|
