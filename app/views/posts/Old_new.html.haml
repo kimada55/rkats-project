@@ -1,0 +1,37 @@
+%table{:class => "top"}
+  %tbody
+    %tr
+      %td= image_tag "mwit_logo.jpg", :class => "logo"
+      %td{:class => "mwit"} Mills Women in Technology - Create New Post
+      %td
+      %td 
+        %table
+          %tbody
+            %tr
+              %td Login
+              %td Sign-Up
+%br
+%br
+-@@today = Date.current
+-@@event_date
+%table 
+  %tbody
+  = form_tag posts_path do
+    %tr
+      %td= label :post, :post_type, 'Select Post type',:align=> "right"
+      %td= select :post, :post_type, ['Job','Internship','Event','Scholarship']
+      %td
+    %tr
+      %td= label :post, :title, 'Title'
+      %td= text_field :title, 'title'
+      %td= submit_tag 'Save Changes'
+    %tr
+      %td= label :post, :detail, 'Details'
+      %td= text_field :detail, 'detail'
+      %td= button_to 'Cancel', posts_path
+    %tr
+      %td= label :post, :post_date, 'Date'
+      %td= date_select(:event_date, :post)
+      %td= hidden_field :post, :created_at, value: @today#, :updated_at = Time.now
+      
+      

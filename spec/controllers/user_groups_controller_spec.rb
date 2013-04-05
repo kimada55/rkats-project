@@ -1,0 +1,1 @@
+#RSpecs file for user_groups_controller.rb 

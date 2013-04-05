@@ -10,6 +10,12 @@
       </ul>
     </div>
   <% end %>
+  <table>
+    <tr>
+      <td ><%#= f.label :title %>
+      </td>
+      <td><%#= f.text_field :title %></td></tr>
+  </table>
 
   <div class="field">
     <%= f.label :title %><br />
@@ -21,7 +27,7 @@
   </div>
   <div class="field">
     <%= f.label :detail %><br />
-    <%= f.text_field :detail %>
+    <%= f.text_field :detail, :row => 10, :cols =>15  %>
   </div>
   <div class="field">
     <%= f.label :post_date %><br />

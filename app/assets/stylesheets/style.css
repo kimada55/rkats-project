@@ -52,9 +52,14 @@ td {
 	color: #000F2E;
 	text-align: left;
 	vertical-align: text-bottom;
-	font-size: 90%;
+	font-size: 100%;
 }
-
+td.posts{
+	text-align: right;
+	vertical-align: text-bottom;
+	font-size: 200%;
+	margin-right: 5px;
+}
 td.mwit {
 	text-align: center;
 	margin-left: 0px;
